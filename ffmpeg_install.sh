@@ -16,9 +16,9 @@ deb-src http://www.deb-multimedia.org jessie main non-free
 EOF
 
 ### update and get the key : may the force be with you ^^
-LANG=en_EN.UTF-8 apt-get update
+apt-get update
 LANG=en_EN.UTF-8 apt-get --force-yes install deb-multimedia-keyring
-LANG=en_EN.UTF-8 apt-get update
+apt-get update
 
 ### remove old version of ffmpeg, if exist
 LANG=en_EN.UTF-8 apt-get -y remove ffmpeg
